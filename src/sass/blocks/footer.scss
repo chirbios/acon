@@ -1,0 +1,77 @@
+.footer {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 49px 0 33px 0;
+    }
+    &__top_title {
+        padding-top: 5px;
+        padding-bottom: 26px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        color: #2B2E34;
+    }
+    &__top_subtitle {
+        font-size: 16px;
+        line-height: 33px;
+        color: #7E838C;
+    }
+    &__top_tel {
+        padding-top: 52px;
+        padding-bottom: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: #2B2E34;
+        img {
+            padding-right: 13px;
+        }
+    }
+    &__top_calltime {
+        font-size: 16px;
+        line-height: 28px;
+        color: #7E838C;
+    }
+    &__top_online {
+        padding-top: 40px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: #2B2E34;
+    }
+    &__top_social_networks {
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        img {
+            padding-right: 10px;
+        }
+    }
+    &__top_vk {
+        padding-right: 10px;
+    }
+    &__divider {
+        border: 1px solid rgba(217, 218, 225, 0.8);
+    }
+    &__bot {
+        padding-top: 43px;
+        padding-bottom: 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: #7E838C;
+        img {
+            margin: auto;
+            transform: translateY(10px);
+        }
+        span {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #2B2E34;
+        }
+    }
+}

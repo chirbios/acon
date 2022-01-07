@@ -1,0 +1,24 @@
+@import url(//db.onlinewebfonts.com/c/4ffb8f8bf98af1f17a1c7dd23fe80935?family=Euclid+Circular+A+Semibold);
+* {
+    font-family: "Euclid Circular A";
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+.container-mini {
+    max-width: 1095px;
+    margin: 0 auto;
+}
+
+@import 'base/variables';
+
+@import 'blocks/nav';
+@import 'blocks/promo';
+@import 'blocks/content';
+@import 'blocks/filter-price';
+@import 'blocks/seo';
+@import 'blocks/footer';
+@import 'blocks/mobile';

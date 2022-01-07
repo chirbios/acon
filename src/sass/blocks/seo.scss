@@ -1,0 +1,24 @@
+.seo {
+    padding-bottom: 190px;
+    &__name {
+        padding-top: 20px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 44px;
+        color: #2B2E34;
+    }
+    &__subname {
+        padding-top: 50px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 35px;
+        color: #2B2E34;
+    }
+    &__text {
+        padding-top: 50px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: #2B2E34;
+    }
+}

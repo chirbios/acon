@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ЭКОН УРФО</title>
+    <meta name="title" content="Энергосберегающие технологии">
+    <link href="//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <div class="nav__top">
+                    <div class="nav__burger">
+                        <img src="./img/nav/burger.svg" alt="burger">
+                    </div>
+                    <div class="nav__logo">
+                        <img src="./img/nav/logo.png" alt="logo">
+                    </div>
+                    <form id="nav__form">
+                        <input type="text" placeholder="Поиск товаров.." id="text">
+                        <div class="nav__find">
+                            <img src="./img/nav/find.svg" alt="find">
+                        </div>
+                      </form>
+                    <div class="nav__info">
+                        <div class="nav__delivery">
+                            <img src="./img/nav/delivery.svg" alt="delivery" placeholder='Поиск товаров'>
+                        </div>
+                        <div class="nav__profile">
+                            <img src="./img/nav/lk.svg" alt="profile">
+                        </div>
+                        <div class="nav__basket">
+                            <img src="./img/nav/clarity_shopping-bag-line.svg" alt="basket">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__center">
+                    <div class="nav__item">
+                        <img src="./img/nav/иконка.svg" alt="location">
+                        Екатеринбург
+                    </div>
+                    <div class="nav__item">
+                        <img src="./img/nav/tel.svg" alt="tel">
+                        +7 (495) 506-36-50
+                    </div>
+                    <div class="nav__item">
+                        <img src="./img/nav/mail.svg" alt="mail">
+                        office@uconerfo.ru
+                    </div>
+                    <div class="nav__item">
+                        <img src="./img/nav/edit-3.svg" alt="email">
+                        Заявка на расчет
+                    </div>
+                    <div class="nav__item">
+                        <img src="./img/nav/support.svg" alt="support">
+                        Контакты
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <div class="promo__text">
+                    <div class="promo__title">Дозаторы и антисептики</div>
+                    <div class="promo__subtitle">Устанавливаются в общественных местах для предотвращения распространения вирусов микробов</div>
+                </div>
+                    <div class="promo__img">
+                        <img src="./img/nav/sub_nav.png" alt="product">
+                    </div>
+                <button class="promo__button"><img src="./img/nav/group.svg" alt="group">   Подробнее</button>
+            </div>
+        </div>
+    </section>
+    <section class="content"> 
+        <div class="container">
+            <div class="content__path">Главная  / <span>Отопительное оборудование</span></div>
+            <div class="content__name">Отопительное оборудование</div>
+            <div class="content__wrapper">
+                <div class="content__filter-menu">
+                    <div class="content__filter">
+                        <div class="content__filter-name">Фильтры</div>
+                        <div class="content__filter__reset">Сбросить <img src="./img/nav/reset.svg" alt="reset"></div>
+                    </div>
+                    <div class="content__filter_item">
+                        <div class="content__filter_item-title">Отопительное оборудование <div class="content__filter-arrow"></div></div>
+                        <div class="content__filter_item-text check"><div class="content__filter-check"></div><div class="content__filter-check-arrow"></div>Радиаторы отопления</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Конвекторы отопления</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Полотенцесушители</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Арматура для радиаторов </div>
+                    </div>
+                    <div class="content__filter_item">
+                        <div class="content__filter_item-title">Бренд <div class="content__filter-arrow"></div></div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Purmo</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Irsap</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Terma</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Loten</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Guardo</div>
+                    </div>
+                    <div class="filter__block filter__block--slider">
+                        <div class="filter__head">Цена </div>
+                        <div class="filter__slider">
+                            <div class="range__zero">0</div>
+                            <div id="filter__range"></div>
+                        </div>
+                        <div class="filter__cost table"></div>
+                    </div>
+                    <div class="content__filter_item">
+                        <div class="content__filter_item-title">Количество секций <div class="content__filter-arrow"></div></div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>4</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>6</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>8</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>12</div>
+                    </div>
+                    <div class="content__filter_item">
+                        <div class="content__filter_item-title">Межосетевое расстояние <div class="content__filter-arrow"></div></div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>20 см</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>35 см</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>50 см</div>
+                    </div>
+                    <div class="content__filter_item">
+                        <div class="content__filter_item-title">Площадь отопления <div class="content__filter-arrow"></div></div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Более 19 м² </div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>Менее 8 м²</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>от 10 до 14 м²</div>
+                        <div class="content__filter_item-text"><div class="content__filter-nocheck"></div>от 15 до 26 м² </div>
+                    </div>
+                    <div class="content__filter_item">
+                        <div class="content__filter_item-title">Цвет <div class="content__filter-arrow"></div></div>
+                        <div class="content__filter_item-text check"> <div class="circle check__cicle red"></div>Красный <img src="./img/main/delete.svg" alt="delete"></div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not yellow"></div>Желтый</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not green"></div>Зеленый</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not blue"></div>Синий</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not violet"></div>Фиолетовый</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not pink"></div>Розовый</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not beige"></div>Бежевый</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not white"></div>Белый</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not black"></div>Черный</div>
+                        <div class="content__filter_item-text text_color-grey"> <div class="circle check_not grey"></div>Серый</div>
+                    </div>
+                </div>
+                <div class="content__filter_choose">
+                    <div class="content__filter_number"><span>2394</span>  товаров</div>
+                    <div class="content__filter_price">Цена:  <span>По возрастанию </span><div class="content__filter-arrow"></div> <div class="arrow"></div></div>
+                </div>
+                <div class="content__product-list">
+                    <div class="content__product-list_wrapper">
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_1.png" alt="product_1">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <div class="content__product-list_sale"><img src="./img/main/procent.svg" alt="procent"> Акция</div>
+                                <img src="./img/main/product_2.png" alt="product_2">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_old-price">5 890 <span>₽</span></div>
+                                <div class="content__red_line"></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_3.png" alt="product_3">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_1.png" alt="product_1">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_2.png" alt="product_2">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_3.png" alt="product_3">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_1.png" alt="product_1">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+
+                            <div class="content__product-list_img">
+                                <div class="content__product-list_sale"><img src="./img/main/procent.svg" alt="procent"> Акция</div>
+                                <img src="./img/main/product_2.png" alt="product_2">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_old-price">5 890 <span>₽</span></div>
+                                <div class="content__red_line"></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_3.png" alt="product_3">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_1.png" alt="product_1">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_2.png" alt="product_2">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_3.png" alt="product_3">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_1.png" alt="product_1">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_2.png" alt="product_2">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Биметаллический радиатор Royal Thermo Indigo Super 
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__product-list_item">
+                            <div class="content__product-list_img">
+                                <img src="./img/main/product_3.png" alt="product_3">
+                            </div>
+                            <div class="content__product-list_descr">
+                                Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico
+                            </div>
+                            <div class="content__product-list_buy">
+                                <div class="content__product-list_price">4 250 <span>₽</span></div>
+                                <div class="content__product-list_basket">
+                                    <img src="./img/main/basket_white.svg" alt="basket">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="seo">
+                <div class="container-mini">
+                    <div class="seo__name">
+                        Длинный или короткий заголовок SEO текста
+                    </div>
+                    <div class="seo__text">
+                        Интернет-магазин автоматической водосберегающей сантехники и дизайн радиаторов отопления 
+        Сантехническое и отопительное оборудование - основные продукты интернет-магазина "Экон Урфо". 
+        На сайте urfoecon.ru, вы можете выбрать и купить автоматическую водосберегающую сантехнику и дизайн радиаторы отопления. На сайте urfoecon.ru, вы можете выбрать: смесители, душевые, смывные устройства для унитазов и писсуаров, а так же дополнительные товары: сушилки для рук, дозаторы мыла, фены для волос, держатели туалетной бумаги, ведра и другое.
+        
+        Преимущества автоматической водосберегающей сантехники — экономия денег и воды! Результат будет заметен с первого месяца установки. Обратитесь к нашим специалистам и узнайте вашу выгоду при использовании автоматической водосберегающей сантехники. Звоните или оставляйте заявку на расчет.
+                    </div>
+                    <div class="seo__subname">
+                        Подзаголовок внутри текста
+                    </div>
+                    <div class="seo__text">
+        На сайте urfoecon.ru, вы можете выбрать красивые современные модели радиаторов отопления Европейских и Российских производителей. Радиаторы представленные в каталоге,изготовлены из прочных материалов: сталь, алюминий и биметалл. Мы уверены в качестве нашей продукции и предоставляем гарантию до 25 лет на радиаторы отопления. В нашем ассортименте: водяные и электрические радиаторы, высокие, средние и низкие, узкие и широкие, трубчатые и панельные модели, стандартные белые, черные, бежевые и любые цвета по шкале RAL.
+        
+        Обратитесь к нашим специалистам и подберите радиаторы, которые гармонично впишутся в ваш интерьер и будут эффективно обогревать ваш дом. Звоните или оставляйте заявку на расчет.  
+                </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer"> 
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top_item">
+                    <div class="footer__top_logo">
+                        <img src="./img/nav/logo.png" alt="footer-logo">
+                    </div>
+                    <div class="footer__top_phone">
+                        <div class="footer__top_tel"><img src="./img/footer/phone.svg" alt="pnone">+7 (495) 506-36-50</div>
+                        <div class="footer__top_calltime">Пн-Пт: с 08:00 до 19:00</div>
+                        <div class="footer__top_calltime">Сб-Вс: с 08:00 до 16:00</div>
+                    </div>
+                    <div class="footer__top_tel"><img src="./img/footer/mail_footer.svg" alt="email">office@uconerfo.ru</div>
+                    <div class="footer__top_social">
+                        <div class="footer__top_online">Мы в сети</div>
+                        <div class="footer__top_social_networks">
+                            <div class="footer__top_vk_img">
+                                <img src="./img/footer/vk_footer.svg" alt="vk">
+                            </div>
+                            <div class="footer__top_vk">ВКонтакте</div>
+                            <div class="footer__top_vk_img">
+                                <img src="./img/footer/inst.svg" alt="inst">
+                            </div>
+                            <div class="footer__top_vk">Instagram</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top_item">
+                    <div class="footer__top_title">Категории продукции</div>
+                    <div class="footer__top_subtitle">Трубчатые радиаторы</div>
+                    <div class="footer__top_subtitle">Панельные радиаторы</div>
+                    <div class="footer__top_subtitle">Полотенцесушители</div>
+                    <div class="footer__top_subtitle">Вертикальные радиаторы</div>
+                    <div class="footer__top_subtitle">Дизайн радиаторы</div>
+                    <div class="footer__top_subtitle">Внутрипольные конвекторы</div>
+                    <div class="footer__top_subtitle">Конвекторы водяные</div>
+                    <div class="footer__top_subtitle">Водосберегающая сантехника</div>
+                    <div class="footer__top_subtitle">Теплый пол</div>
+                    <div class="footer__top_subtitle">Чугунные дизайн радиаторы</div>
+                    <div class="footer__top_subtitle">Арматура для радиаторов</div>  
+                </div>
+                <div class="footer__top_item">
+                    <div class="footer__top_title">Категории продукции</div>
+                    <div class="footer__top_subtitle">Трубчатые радиаторы</div>
+                    <div class="footer__top_subtitle">Панельные радиаторы</div>
+                    <div class="footer__top_subtitle">Полотенцесушители</div>
+                    <div class="footer__top_subtitle">Вертикальные радиаторы</div>
+                    <div class="footer__top_subtitle">Дизайн радиаторы</div>
+                    <div class="footer__top_subtitle">Внутрипольные конвекторы</div>
+                    <div class="footer__top_subtitle">Конвекторы водяные</div>
+                    <div class="footer__top_subtitle">Водосберегающая сантехника</div>
+                    <div class="footer__top_subtitle">Теплый пол</div>
+                    <div class="footer__top_subtitle">Чугунные дизайн радиаторы</div>
+                    <div class="footer__top_subtitle">Арматура для радиаторов</div> 
+                </div>
+                <div class="footer__top_item">
+                    <div class="footer__top_title">Информация</div>
+                    <div class="footer__top_subtitle">О компании</div>
+                    <div class="footer__top_subtitle">Готовые решения</div>
+                    <div class="footer__top_subtitle">Наша продукция</div>
+                    <div class="footer__top_subtitle">Цвета</div>
+                    <div class="footer__top_subtitle">Сертификаты</div>
+                    <div class="footer__top_subtitle">Доставка и оплата</div>
+                    <div class="footer__top_subtitle">Контакты</div>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__bot">
+                <div class="footer__bot_item">Copyright © 2014 - 2020</div>
+                <div class="footer__bot_item">Политика конфиденциальности</div>
+                <div class="footer__bot_item">Обработка персональной информации</div>
+                <div class="footer__bot_item">Разработано <img src="./img/footer/footer.svg" alt="footer"> <span>Request</span> Design</div>
+            </div>
+        </div>
+    </footer>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
